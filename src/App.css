@@ -1,0 +1,66 @@
+*{
+    font-family: sans-serif;
+}
+
+.App{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 85%;
+    height: 95%;
+    margin-top: 100px;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+h1 {
+    display: flex;
+    position: absolute;
+    top: 5px;
+    text-align: center;
+    justify-content: center;
+
+}
+
+input,
+button {
+    padding: 10px;
+    border-radius: 3px;
+}
+
+input {
+    margin-bottom: 20px;
+    text-align: right;
+
+}
+button {
+    border: 1px solid gray;
+    background: whitesmoke;
+    margin: 5px;
+}
+
+button:nth-last-child(7),
+button:nth-last-child(6),
+button:nth-last-child(5),
+button:nth-last-child(4),
+button:nth-last-child(3),
+button:nth-last-child(2),
+button:nth-last-child(1) {
+    background: tomato;
+    color: white;
+}
+
+ #equal{
+    grid-column: 1/5 ;
+
+ }
